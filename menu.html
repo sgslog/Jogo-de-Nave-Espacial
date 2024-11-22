@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu do Jogo</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('imagem.jpg'); /* Substitua pelo caminho da sua imagem */
+            background-size: cover; /* Faz a imagem cobrir toda a tela */
+            background-position: center; /* Centraliza a imagem */
+            color: white;
+            flex-direction: column;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+        h1 {
+            margin-bottom: 30px;
+            font-size: 48px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra mais forte para melhor legibilidade */
+        }
+        button {
+            margin: 15px;
+            padding: 15px 30px;
+            font-size: 22px;
+            cursor: pointer;
+            background-color: rgba(68, 68, 68, 0.8); /* Fundo semi-transparente para melhor contraste */
+            color: white;
+            border: 2px solid #666;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        button:hover {
+            background-color: rgba(102, 102, 102, 0.8); /* Cor de fundo ao passar o mouse */
+            transform: scale(1.05);
+        }
+        button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <h1>Defensores da Galáxia</h1>
+        <button id="playButton">Jogar</button>
+        <button id="optionsButton">Opções</button>
+        <button id="exitButton">Sair</button>
+    </div>
+
+    <script>
+        document.getElementById('playButton').addEventListener('click', () => {
+            window.location.href = 'game.html'; // Redireciona para a página do jogo
+        });
+
+        document.getElementById('optionsButton').addEventListener('click', () => {
+            alert('Opções ainda não implementadas.'); // Exemplo de opções
+        });
+
+        document.getElementById('exitButton').addEventListener('click', () => {
+            window.close(); // Fecha a aba do navegador (pode não funcionar em todos os navegadores)
+        });
+    </script>
+</body>
+</html>

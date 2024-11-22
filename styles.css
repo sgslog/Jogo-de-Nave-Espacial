@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('background2.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz com que a imagem cubra todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    font-family: 'Arial', sans-serif; /* Fonte padrão */
+}
+
+canvas {
+    border: 2px solid #ffffff; /* Borda mais espessa */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Sombra ao redor do canvas */
+    background-image: url('background.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz com que a imagem cubra todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    transition: transform 0.3s; /* Transição suave */
+}
+
+canvas:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
