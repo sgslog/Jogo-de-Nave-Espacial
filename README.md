@@ -2,7 +2,7 @@
 
 ![Menu do Jogo](game-image.jpg)
 
-## Link do video (https://youtu.be/WRucU5n9DUc)
+# Link do video (https://youtu.be/WRucU5n9DUc)
 
 ## 🍁 Sobre o repositório
 Este repositório contém a documentação e demonstração do jogo criado na disciplina de Computabilidade e Complexidade de Algoritmos - Centro Universitário do Distrito Federal, durante o 6° semestre.
